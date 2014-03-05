@@ -130,7 +130,8 @@ body {
   font-family: 'Source Sans Pro', Helvetica, Arial;
   font-weight: 200;
   line-height: 28px;
-  color: #777;
+  color: #666;
+  font-size: 1.2em;
 }
 h1,
 h2 {
@@ -159,15 +160,12 @@ p {
   background: #333;
 }
 .menu {
-  box-shadow: 2px 0px 2px 1px #9c9c9c;
-  -webkit-box-shadow: 2px 0px 2px 1px #9c9c9c;
-  -moz-box-shadow: 2px 0px 2px 1px #9c9c9c;
   background: #262829;
-  margin-left: -150px;
-  width: 150px;
+  margin-left: -190px;
+  width: 190px;
   position: fixed;
   top: 0;
-  left: 150px;
+  left: 190px;
   bottom: 0;
   z-index: 1000;
   line-height: 1.5em;
@@ -195,15 +193,18 @@ p {
   border-bottom: solid 1px #444;
 }
 .menu .submenu a {
-  padding-left: 1.5em;
+  padding-left: 2em;
   padding-top: 0.4em;
   padding-right: 0.5em;
-  background: #444;
   font-size: 0.9em;
 }
 .menu .submenu a.active {
-  background: #777;
+  background: #262829;
   color: white;
+}
+.menu .submenu a.active:before {
+  content: '› ';
+  font-size: 1.3em;
 }
 .main {
   width: 100%;
@@ -322,6 +323,7 @@ ul.skills li {
   margin: 0 auto;
   width: 70%;
   margin-bottom: 50px;
+  padding-top: 50px;
 }
 .cont h2 {
   margin: 50px 0 20px 0;
