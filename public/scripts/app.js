@@ -14,6 +14,7 @@
 })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
 ga('create', 'UA-41369793-1', 'barbotte.net');
+ga('send', 'pageview');
 
 // Angular app init
 var app = angular.module('barbotte', ['ngRoute']);
