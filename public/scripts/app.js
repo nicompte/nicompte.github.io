@@ -57,10 +57,8 @@ app.controller('MenuCtrl', function ($scope, $location) {
 
 app.controller('MainCtrl', function ($scope, $location, $window) {
   'use strict';
-  $scope.$on('$viewContentLoaded', function () {
-    $window.ga('send', 'pageview', $location.path());
-    $scope.boolChangeClass = false;
-  });
+  $window.ga('send', 'pageview', $location.path());
+  $scope.boolChangeClass = false;
 });
 
 app.directive('submenulink', function () {
