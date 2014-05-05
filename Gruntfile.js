@@ -55,6 +55,7 @@ module.exports = function (grunt) {
           'public/views/skills.html': 'public/views/skills.slim',
           'public/views/skills_javascript.html': 'public/views/skills_javascript.slim',
           'public/views/skills_j2e.html': 'public/views/skills_j2e.slim',
+          'public/views/skills_languages.html': 'public/views/skills_languages.slim',
           'public/views/studies.html': 'public/views/studies.slim'
         }
       }

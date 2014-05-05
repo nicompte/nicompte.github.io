@@ -9,14 +9,19 @@
       nav
         ul
           li: a href="/studies" data-ng-class="isActive('/studies')" &Eacute;tudes
-          li
-            a href="javascript:void(0)" data-ng-class="isActive('/skills')" data-ng-click="openSubmenu('skills')" Compétences
-            ul.submenu data-ng-show="selected=='skills'"
-              li: a href="/skills/javascript" data-ng-class="isActive('/skills/javascript')" javascript
-              li: a href="/skills/j2e" data-ng-class="isActive('/skills/j2e')" j2e
           li: a href="/experiences" data-ng-class="isActive('/experiences')" Exp&eacute;riences
+          li
+            a href="/skills" data-ng-class="isActive('/skills')"  Compétences
+            / data-ng-click="openSubmenu('skills')"
+            /
+              ul.submenu data-ng-show="selected=='skills'"
+                li: a href="/skills/javascript" data-ng-class="isActive('/skills/javascript')"
+                  | Front-end
+                li: a href="/skills/j2e" data-ng-class="isActive('/skills/j2e')"
+                  | Back-end
+                li: a href="/skills/functionnal" data-ng-class="isActive('/skills/functionnal')" Fonctionnel
+                li: a href="/skills/languages" data-ng-class="isActive('/skills/languages')" Langues
           li: a href="/projects" data-ng-class="isActive('/projects')" Projets
-
 
   .content
     div data-ng-view="" data-ng-animate="{enter: 'animate-enter'}" data-ng-controller="MainCtrl"

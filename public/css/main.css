@@ -145,7 +145,7 @@ a {
   color: blue;
 }
 .main-block {
-  padding-left: 150px;
+  padding-left: 186px;
   left: 0;
 }
 .content {
@@ -328,6 +328,7 @@ ul.skills li {
   width: 70%;
   margin-bottom: 50px;
   padding-top: 50px;
+  font-size: 0.9em;
 }
 .cont h2 {
   margin: 50px 0 20px 0;
@@ -350,6 +351,29 @@ ul.skills li {
 .cont img {
   float: right;
   max-width: 200px;
+  max-height: 70px;
+}
+.cont img.smaller {
+  max-width: 150px;
+}
+.cont.small img {
+  max-width: 100px;
+}
+.cont.small img.drapeau {
+  max-width: 70px;
+}
+.cont.small .content-block {
+  padding-left: 20px;
+}
+.cont.small .content-block h2 {
+  font-size: 0.95em;
+  margin: 30px 0 20px 0;
+}
+.cont.small .content-block:after {
+  content: "";
+  visibility: hidden;
+  height: 0;
+  clear: both;
 }
 .content-block:after {
   content: ".";
@@ -370,7 +394,7 @@ ul.skills li {
     display: block;
   }
   .menu-toggle.displayMenu {
-    left: 150px;
+    left: 186px;
   }
   .main-block {
     position: relative;
@@ -381,6 +405,6 @@ ul.skills li {
     box-shadow: none;
   }
   .menu.displayMenu {
-    left: 150px;
+    left: 186px;
   }
 }
