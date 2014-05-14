@@ -1,5 +1,6 @@
 @hcolor: #1f8dd6;
 @red: #CC0000; //#CC2100
+@skill-blue: #3a87ad;
 
 body{
   font-family: 'Source Sans Pro', Helvetica, Arial;
@@ -16,7 +17,7 @@ p{
 }
 a{
   text-decoration: none;
-  color: blue;
+  color: lighten(@red, 15);
 }
 .main-block{
   padding-left: 186px;
@@ -181,7 +182,7 @@ ul.skills{
   margin-left: 5px;
   li{
     font-size: 0.7em;
-    background-color: #3a87ad;
+    background-color: @skill-blue;
     color: white;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -194,4 +195,3 @@ ul.skills{
     margin-right: 5px;
   }
 }
-

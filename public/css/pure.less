@@ -61,12 +61,12 @@
       }
     }
     h2{
-      color: #cc0000;
+      color: @red;
     }
     .content-block{
       padding-left: 20px;
       h2{
-        font-size: 0.95em;
+        font-size: 1em;
         margin: 20px 0 10px 0;
         color: #555;
       }
@@ -89,5 +89,9 @@
   }
   .year{
     color: @red;
+    &:after{
+      content: " - ";
+      color: #555;
+    }
   }
 }

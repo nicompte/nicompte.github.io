@@ -142,7 +142,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: blue;
+  color: #ff1a1a;
 }
 .main-block {
   padding-left: 186px;
@@ -370,7 +370,7 @@ ul.skills li {
   padding-left: 20px;
 }
 .cont.small .content-block h2 {
-  font-size: 0.95em;
+  font-size: 1em;
   margin: 20px 0 10px 0;
   color: #555;
 }
@@ -389,9 +389,22 @@ ul.skills li {
 .content-block .year {
   color: #cc0000;
 }
+.content-block .year:after {
+  content: " - ";
+  color: #555;
+}
 @media (max-width: 870px) {
   .cont {
     width: 95%;
+  }
+  .cont.withlogo .year {
+    display: block;
+  }
+  .cont.withlogo .year:after {
+    content: "";
+  }
+  .cont img {
+    display: block;
   }
   .menu-toggle {
     position: fixed;
