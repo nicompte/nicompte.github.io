@@ -293,7 +293,6 @@ ul.description li:before {
 ul.skills {
   padding-left: 0px!important;
   margin-left: 5px;
-  margin-top: 5px;
 }
 ul.skills li {
   font-size: 0.7em;
@@ -310,6 +309,7 @@ ul.skills li {
   margin-right: 5px;
   float: left;
   line-height: 16px;
+  margin-top: 5px;
 }
 .header {
   min-height: 80px;
