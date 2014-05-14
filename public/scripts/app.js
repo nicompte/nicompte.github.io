@@ -55,10 +55,11 @@ app.controller('MenuCtrl', function ($scope, $location) {
   if($scope.isActive('/skills') !== "") $scope.openSubmenu('skills');
 });
 
-app.controller('MainCtrl', function ($scope, $location, $window) {
+app.controller('MainCtrl', function ($scope, $location, $window, $rootScope) {
   'use strict';
   $window.ga('send', 'pageview', $location.path());
-  $scope.boolChangeClass = false;
+  $rootScope.boolChangeClass = false;
+  //$rootScope.$apply();
 });
 
 app.directive('submenulink', function () {

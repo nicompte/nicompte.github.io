@@ -357,17 +357,22 @@ ul.skills li {
   max-width: 150px;
 }
 .cont.small img {
-  max-width: 100px;
+  margin-top: 20px;
+  max-width: 50px;
 }
 .cont.small img.drapeau {
-  max-width: 70px;
+  max-width: 50px;
+}
+.cont.small h2 {
+  color: #cc0000;
 }
 .cont.small .content-block {
   padding-left: 20px;
 }
 .cont.small .content-block h2 {
   font-size: 0.95em;
-  margin: 30px 0 20px 0;
+  margin: 20px 0 10px 0;
+  color: #555;
 }
 .cont.small .content-block:after {
   content: "";
@@ -406,5 +411,8 @@ ul.skills li {
   }
   .menu.displayMenu {
     left: 186px;
+  }
+  .main h1 {
+    line-height: 1em;
   }
 }
