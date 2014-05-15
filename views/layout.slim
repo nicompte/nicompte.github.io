@@ -5,15 +5,14 @@ html data-ng-app="barbotte"
     meta content="width=device-width, initial-scale=1.0" name="viewport"
     title= locals[:title] || 'Nicolas Barbotte'
     link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700" rel="stylesheet" type="text/css"
-    link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css"
+    link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css"
+    link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"
     link href="/css/main.css" rel="stylesheet" type="text/css"
     /[if lt IE 9]
       script src="/scripts/build/html5shiv.js"
     script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
-    script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.js"
-    script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.js"
     script src="/scripts/app.js"
-    script src="/scripts/bootstrap.min.js"
+    script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"
   body data-spy="scroll"
     / Content
     .content == yield

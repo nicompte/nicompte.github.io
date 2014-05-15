@@ -7,7 +7,7 @@ body{
   font-weight: 200;
   line-height: 28px;
   color: #666;
-  font-size: 1.8em;
+  font-size: 1.1em;
 }
 h1, h2{
   font-weight: 700;
@@ -49,7 +49,7 @@ a{
   }
 }*/
 
-.nav{
+#nav{
   position: fixed;
   top: 0;
   background-color: rgba(255,255,255,0.9);
@@ -60,11 +60,19 @@ a{
   font-weight: 400;
   color: rgb(119, 119, 119);
   font-size: 17px;
+  .navbar-toggle{
+    z-index: 3;
+    font-size: 0.9em;
+    padding: 5px 11px;
+  }
+  .navbar-brand{
+    display: none;
+  }
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: @red;
-  background-color: rgba(255,255,255,0.9);
+  background-color: transparent;
 }
 
 .main-block{
