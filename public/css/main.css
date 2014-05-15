@@ -148,7 +148,6 @@ a {
   color: #ff1a1a;
 }
 .main-block {
-  padding-left: 186px;
   left: 0;
 }
 .content {
@@ -318,6 +317,7 @@ ul.skills li {
   padding: 1em;
   text-align: center;
   border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
   background: #fff;
 }
 .header h1 {
