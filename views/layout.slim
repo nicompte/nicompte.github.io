@@ -9,9 +9,11 @@ html data-ng-app="barbotte"
     link href="/css/main.css" rel="stylesheet" type="text/css"
     /[if lt IE 9]
       script src="/scripts/build/html5shiv.js"
+    script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
     script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.js"
     script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.js"
     script src="/scripts/app.js"
-  body
+    script src="/scripts/bootstrap.min.js"
+  body data-spy="scroll"
     / Content
     .content == yield

@@ -7,7 +7,7 @@ body{
   font-weight: 200;
   line-height: 28px;
   color: #666;
-  font-size: 1.2em;
+  font-size: 1.8em;
 }
 h1, h2{
   font-weight: 700;
@@ -19,6 +19,50 @@ a{
   text-decoration: none;
   color: lighten(@red, 15);
 }
+
+/*.nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 2;
+  border-bottom: solid 1px #e7e7e7;
+  min-height: 50px;
+
+  ul{
+    height: auto!important;
+    padding-left: 0px!important;
+    margin-left: 5px;
+    li{
+      display: inline;
+      list-style-type: none;
+      float: left;
+      line-height: 16px;
+      margin-top: 5px;
+      a{
+        line-height: 20px;
+        padding: 10px 15px;
+        color: #666;
+        font-weight: 300;
+      }
+    }
+  }
+}*/
+
+.nav{
+  position: fixed;
+  top: 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 2;
+  border-bottom: solid 1px #e7e7e7;
+  width: 100%;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: @red;
+  background-color: rgba(255,255,255,0.9);
+}
+
 .main-block{
   //padding-left: 186px;
   left: 0;
