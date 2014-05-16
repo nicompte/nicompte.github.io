@@ -50,4 +50,5 @@ ul.skills{padding-left:0px!important;margin-left:5px;}ul.skills li{font-size:0.7
 .cont.small .content-block:after{content:"";visibility:hidden;height:0;clear:both;}
 .content-block:after{content:".";visibility:hidden;height:0;clear:both;}
 .content-block .year{color:#cc0000;}.content-block .year:after{content:" - ";color:#555;}
+.nouse{clear:both;}
 @media (max-width:870px){.navbar-brand{display:inline!important;padding:18px 15px;} .cont{width:90%;padding-top:15px;}.cont.withlogo .year{display:block;}.cont.withlogo .year:after{content:"";} .cont img{display:block;} .menu-toggle{position:fixed;left:0;display:block;font-size:0.9em;}.menu-toggle.displayMenu{left:186px;} .main-block{position:relative;padding-left:0;} .menu{left:0px;box-shadow:none;}.menu.displayMenu{left:186px;} .main h1{line-height:1em;}}

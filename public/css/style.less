@@ -1,5 +1,5 @@
 @hcolor: #1f8dd6;
-@red: #CC0000; //#CC2100
+@red: #CC0000;
 @skill-blue: #3a87ad;
 
 body{
@@ -19,35 +19,6 @@ a{
   text-decoration: none;
   color: lighten(@red, 15);
 }
-
-/*.nav{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(255,255,255,0.9);
-  z-index: 2;
-  border-bottom: solid 1px #e7e7e7;
-  min-height: 50px;
-
-  ul{
-    height: auto!important;
-    padding-left: 0px!important;
-    margin-left: 5px;
-    li{
-      display: inline;
-      list-style-type: none;
-      float: left;
-      line-height: 16px;
-      margin-top: 5px;
-      a{
-        line-height: 20px;
-        padding: 10px 15px;
-        color: #666;
-        font-weight: 300;
-      }
-    }
-  }
-}*/
 
 #nav{
   position: fixed;
@@ -83,6 +54,7 @@ a{
   margin-top:50px;
   padding-top:20px;
   padding-bottom:20px;
+
   width: 100%;
   .links{
     margin-left: 50px;
@@ -94,26 +66,24 @@ a{
 }
 
 .scroll-top {
-   position:fixed;
-   bottom:0;
-   right:6%;
-   z-index:100;
-   background: #e7e7e7;
-   font-size:24px;
-   border-top-left-radius:3px;
-   border-top-right-radius:3px;
+ position:fixed;
+ bottom:0;
+ right:6%;
+ z-index:100;
+ background: #e7e7e7;
+ font-size:24px;
+ border-top-left-radius:3px;
+ border-top-right-radius:3px;
 }
 .scroll-top a:link,.scroll-top a:visited {
   color:#222;
 }
 
 .main-block{
-  //padding-left: 186px;
   left: 0;
 }
 .content{
   width: 100%;
-  //font-size: 1.1em;
 }
 .menu-toggle{
   display: none;
@@ -128,9 +98,6 @@ a{
   }
 }
 .menu{
-  //box-shadow: 2px 0px 2px 1px rgba(156,156,156,1);
-  //-webkit-box-shadow: 2px 0px 2px 1px rgba(156,156,156,1);
-  //-moz-box-shadow: 2px 0px 2px 1px rgba(156,156,156,1);
   background: #262829;
   margin-left: -190px;
   width: 190px;
@@ -153,8 +120,6 @@ a{
       background: #333;
     }
     &.active{
-      //background: #F39D00; //orange
-      //background: #1f8dd6; //bleu
       background: @red; //rouge
       color: white;
     }
@@ -172,7 +137,6 @@ a{
       //background: #444;
       font-size: 0.9em;
       &.active{
-        //background: #777;
         background: #262829;
         color: white;
         &:before{
