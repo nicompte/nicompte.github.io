@@ -43,27 +43,13 @@ module.exports = function (grunt) {
     uglify: {
 
     },
-    requirejs: {
-
-    },
-    slim: {
-      production: {
-        files: {
-          'public/views/experiences.html': 'public/views/experiences.slim',
-          'public/views/home.html': 'public/views/home.slim',
-          'public/views/projects.html': 'public/views/projects.slim',
-          'public/views/skills.html': 'public/views/skills.slim',
-          'public/views/skills_javascript.html': 'public/views/skills_javascript.slim',
-          'public/views/skills_j2e.html': 'public/views/skills_j2e.slim',
-          'public/views/skills_languages.html': 'public/views/skills_languages.slim',
-          'public/views/studies.html': 'public/views/studies.slim'
-        }
-      }
-    },
     less: {
       production: {
         files: {
           'public/css/main.css': 'public/css/main.less'
+        },
+        options:{
+          compress: true
         }
       }
     },
@@ -76,10 +62,6 @@ module.exports = function (grunt) {
       less: {
         files: ['**/*.less'],
         tasks: ['less']
-      },
-      slim: {
-        files: ['public/views/*.slim'],
-        tasks: ['slim']
       }
     }
   });
@@ -87,13 +69,12 @@ module.exports = function (grunt) {
   // Load tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-slim');
+
 
   // Task definition.
-  grunt.registerTask('default', ['jshint', 'less', 'slim']);
+  grunt.registerTask('default', ['jshint', 'less']);
   grunt.registerTask('heroku', ['less']);
 
 };

@@ -2,26 +2,26 @@
 
 
   nav#nav.navbar.navbar-default
+    .container
 
-    .navbar-header
-    button.navbar-toggle type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-      span.sr-only Toggle navigation
-      i.fa.fa-bars
+      .navbar-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        span.sr-only Toggle navigation
+        i.fa.fa-bars
 
-    a.navbar-brand href="/" CV - Nicolas Barbotte
+      a.navbar-brand href="/" CV - Nicolas Barbotte
 
-    nav
-    ul.nav.navbar-nav.collapse.navbar-collapse#bs-example-navbar-collapse-1
-      li
-        a href="#home" Accueil
-      li
-        a href="#studies" Études
-      li
-        a href="#experiences" Expériences
-      li
-        a href="#skills" Compétences
-      li
-        a href="#projects" Projets
+      ul.nav.navbar-nav.collapse.navbar-collapse#bs-example-navbar-collapse-1
+        li
+          a href="#home" Accueil
+        li
+          a href="#studies" Études
+        li
+          a href="#experiences" Expériences
+        li
+          a href="#skills" Compétences
+        li
+          a href="#projects" Projets
 
 
   .content
@@ -49,3 +49,23 @@
     ==Slim::Template.new('views/parts/experiences.slim').render
     ==Slim::Template.new('views/parts/skills.slim').render
     ==Slim::Template.new('views/parts/projects.slim').render
+
+  #footer.navbar-nav.navbar-default
+    .container
+      .text-muted.navbar-nav
+        | Nicolas Barbotte
+      ul.navbar-nav.links
+        li
+          a href="mailto:nicolas@barbotte.net"
+            i.fa.fa-envelope
+        li
+          a href="//github.com/nicompte" target="_blank"
+            i.fa.fa-github
+        li
+          a href="//linkedin.com/pub/nicolas-barbotte/16/2b2/931" target="_blank"
+            i.fa.fa-linkedin
+
+  ul.nav.pull-right.scroll-top
+    li
+      a href="#home" title=("Scroll to top")
+        i.fa.fa-chevron-up
