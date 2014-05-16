@@ -1,6 +1,7 @@
 @hcolor: #1f8dd6;
 @red: #CC0000;
 @skill-blue: #3a87ad;
+@transparent_white: rgba(255,255,255,0.9);
 
 body{
   font-family: 'Source Sans Pro', Helvetica, Arial;
@@ -17,13 +18,16 @@ p{
 }
 a{
   text-decoration: none;
-  color: lighten(@red, 15);
+  color: @red;
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 #nav{
   position: fixed;
   top: 0;
-  background-color: rgba(255,255,255,0.9);
+  background-color: @transparent_white;
   z-index: 2;
   border-bottom: solid 1px #e7e7e7;
   width: 100%;
@@ -153,11 +157,17 @@ a{
   h1{
     font-size: 3em;
     text-align: center;
+
+  }
+  h2{
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
     .links{
       margin: 0;
       margin-left: 10px;
       width: 100px;
-      font-size: 0.4em;
+      font-size: 1em;
       a{
         color: grey;
         margin-right: 5px;
@@ -167,15 +177,16 @@ a{
       }
     }
   }
-  h2{
-    text-align: center;
-    color: #333;
-  }
   margin-bottom: 3em;
 }
 
 .home{
   padding: 8em 0 3em;
+  .name{
+    text-align: left;
+    line-height: 50px;
+    margin-top: 200px;
+  }
 }
 
 .animate-enter{
@@ -248,5 +259,109 @@ ul.skills{
     float: left;
     line-height: 16px;
     margin-top: 5px;
+  }
+}
+
+.header{
+  min-height: 50px;
+  margin: 0;
+  color: #333;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+#skills, #studies, #projects, #experiences{
+  padding-top: 49px;
+}
+
+.header {
+  h1{
+    margin: 0.2em 0;
+    font-size: 2.3em;
+    font-weight: 400;
+    color: #4B4B4B;
+  }
+  h2{
+    color: #777;
+  }
+}
+
+.cont{
+  margin: 0 auto;
+  width: 70%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  font-size: 0.9em;
+  h2{
+    margin: 20px 0 20px 0;
+    font-weight: 400;
+    color: #555;
+    font-size: 1.4em;
+  }
+  ul.mission{
+    padding-left: 10px;
+    margin-bottom: 15px;
+    li{
+      margin-left: 5px;
+    }
+  }
+  h3{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  img{
+    float: right;
+    max-width: 200px;
+    max-height: 70px;
+    &.smaller{
+      max-width: 150px;
+    }
+  }
+  &.small{
+    img{
+      margin-top: 20px;
+      max-width: 50px;
+      &.drapeau{
+        max-width: 50px;
+      }
+    }
+    h2{
+      color: @red;
+    }
+    .content-block{
+      padding-left: 20px;
+      h2{
+        font-size: 1em;
+        margin: 20px 0 10px 0;
+        color: #555;
+      }
+      &:after{
+        content: "";
+        visibility: hidden;
+        height: 0;
+        clear: both;
+      }
+    }
+  }
+}
+
+.content-block{
+  &:after {
+    content: ".";
+    visibility: hidden;
+    height: 0;
+    clear: both;
+  }
+  .year{
+    color: @red;
+    &:after{
+      content: " - ";
+      color: #555;
+    }
   }
 }

@@ -1,6 +1,5 @@
 .main-block#home
 
-
   nav#nav.navbar.navbar-default
     .container
 
@@ -12,32 +11,30 @@
       a.navbar-brand href="/" CV - Nicolas Barbotte
 
       ul.nav.navbar-nav.collapse.navbar-collapse#bs-example-navbar-collapse-1
-        li
-          a href="#home" Accueil
-        li
-          a href="#studies" Études
-        li
-          a href="#experiences" Expériences
-        li
-          a href="#skills" Compétences
-        li
-          a href="#projects" Projets
-
+        li: a href="#home" Accueil
+        li: a href="#studies" Études
+        li: a href="#experiences" Expériences
+        li: a href="#skills" Compétences
+        li: a href="#projects" Projets
 
   .content
-    .home
 
+    .home
       hgroup.main
+
         h1
-          | Nicolas Barbotte
+          .row
+            img.col-md-offset-4.img-responsive.col-md-2 src="/images/test.jpg" width="300"
+            .name.col-md-3
+              div Nicolas
+              div Barbotte
+
+        h2
+          | Ingénieur full stack
           span.links
-            a href="mailto:nicolas@barbotte.net"
-              i.fa.fa-envelope
-            a href="//github.com/nicompte" target="_blank"
-              i.fa.fa-github
-            a href="//linkedin.com/pub/nicolas-barbotte/16/2b2/931" target="_blank"
-              i.fa.fa-linkedin
-        h2 Ingénieur full stack
+            a href="mailto:nicolas@barbotte.net": i.fa.fa-envelope
+            a href="//github.com/nicompte" target="_blank": i.fa.fa-github
+            a href="//linkedin.com/pub/nicolas-barbotte/16/2b2/931" target="_blank": i.fa.fa-linkedin
       .cont
         p
           | Ingénieur en systèmes d'information, je recherche actuellement un emploi. N'hésitez pas à parcourir mon CV,
@@ -53,17 +50,9 @@
       .text-muted.navbar-nav
         | Nicolas Barbotte
       ul.navbar-nav.links
-        li
-          a href="mailto:nicolas@barbotte.net"
-            i.fa.fa-envelope
-        li
-          a href="//github.com/nicompte" target="_blank"
-            i.fa.fa-github
-        li
-          a href="//linkedin.com/pub/nicolas-barbotte/16/2b2/931" target="_blank"
-            i.fa.fa-linkedin
+        li: a href="mailto:nicolas@barbotte.net": i.fa.fa-envelope
+        li: a href="//github.com/nicompte" target="_blank": i.fa.fa-github
+        li: a href="//linkedin.com/pub/nicolas-barbotte/16/2b2/931" target="_blank": i.fa.fa-linkedin
 
   ul.nav.pull-right.scroll-top
-    li
-      a href="#home" title=("Scroll to top")
-        i.fa.fa-chevron-up
+    li: a href="#home" title="Scroll to top": i.fa.fa-chevron-up
