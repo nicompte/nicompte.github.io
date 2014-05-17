@@ -20,7 +20,7 @@ ga('send', 'pageview');
 $(function () {
   'use strict';
 
-  $('body').scrollspy({ target: '#nav.navbar.navbar-default' });
+  $('body').scrollspy({ target: '#nav.navbar' });
 
   $('a[href*=#]:not([href=#])').click(function () {
 
