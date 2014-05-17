@@ -1,4 +1,4 @@
-// Google analytics stuff
+// Google analytics
 (function (i, s, o, g, r, a, m) {
   'use strict';
   i.GoogleAnalyticsObject = r;
@@ -17,16 +17,17 @@ ga('create', 'UA-41369793-1', 'barbotte.net');
 ga('send', 'pageview');
 
 
-$(function(){
+$(function () {
+  'use strict';
 
-  $('body').scrollspy({ target: '#nav.navbar.navbar-default' })
+  $('body').scrollspy({ target: '#nav.navbar.navbar-default' });
 
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        || location.hostname == this.hostname) {
+  $('a[href*=#]:not([href=#])').click(function () {
+
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
 
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top

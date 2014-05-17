@@ -32,11 +32,10 @@ module.exports = function (grunt) {
         trailing: true,
         strict: true,
         predef: [
-          'requirejs', 'require', 'define',
-          'module',
+          '$',
           '_gaq', 'ga',
           'console',
-          'angular'
+          'module'
         ]
       }
     },
@@ -48,7 +47,7 @@ module.exports = function (grunt) {
         files: {
           'public/css/main.css': 'public/css/main.less'
         },
-        options:{
+        options: {
           compress: true
         }
       }
