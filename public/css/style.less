@@ -19,6 +19,9 @@ p{
 a{
   text-decoration: none;
   color: @red;
+  &, &:active, &:focus{
+    outline: none;
+  }
   &:hover{
     text-decoration: none;
   }
@@ -70,17 +73,17 @@ a{
 }
 
 .scroll-top {
- position:fixed;
- bottom:0;
- right:6%;
- z-index:100;
+ position: fixed;
+ bottom: 0;
+ right: 6%;
+ z-index: 100;
  background: #e7e7e7;
- font-size:24px;
- border-top-left-radius:3px;
- border-top-right-radius:3px;
+ font-size: 24px;
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
 }
 .scroll-top a:link,.scroll-top a:visited {
-  color:#222;
+  color: #222;
 }
 
 .main-block{
@@ -263,6 +266,11 @@ ul.skills{
     line-height: 16px;
     margin-top: 5px;
   }
+  &:after{
+    clear: both;
+    content: "";
+    display: block;
+  }
 }
 
 .header{
@@ -367,4 +375,10 @@ ul.skills{
       color: #555;
     }
   }
+}
+
+/* Bootstrap */
+.row{
+  margin-left: auto;
+  margin-right: auto;
 }
