@@ -40,6 +40,7 @@ ul.description{font-size:1.1em;}ul.description li:before{content:"› ";}
 ul.skills{padding-left:0px!important;margin-left:5px;}ul.skills li{font-size:0.7em;background-color:#3a87ad;color:white;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:2px 4px;font-weight:bold;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);display:inline;list-style-type:none;margin-right:5px;float:left;line-height:16px;margin-top:5px;}
 ul.skills:after{clear:both;content:"";display:block;}
 .header{min-height:50px;margin:0;color:#333;padding:1em;text-align:center;border-bottom:1px solid #eee;border-top:1px solid #eee;background:#fff;}
+.cv-icon{font-size:0.9em;}
 #skills,#studies,#projects,#experiences{padding-top:49px;}
 .header h1{margin:0.2em 0;font-size:2.3em;font-weight:400;color:#4B4B4B;}
 .header h2{color:#777;}
