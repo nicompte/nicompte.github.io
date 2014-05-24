@@ -37,4 +37,8 @@ $(function () {
     }
   });
 
+  $('.links a').on('click', function(){
+    ga('send', 'event', 'link', 'click', $(this).attr('title'));
+  });
+
 });
