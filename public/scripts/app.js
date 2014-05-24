@@ -24,6 +24,8 @@ $(function () {
 
   $('a[href*=#]:not([href=#])').click(function () {
 
+    ga('send', 'event', 'menu', 'click', $(this).html());
+
     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
 
       var target = $(this.hash);
