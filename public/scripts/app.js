@@ -16,7 +16,6 @@
 ga('create', 'UA-41369793-1', 'barbotte.net');
 ga('send', 'pageview');
 
-
 $(function () {
   'use strict';
 
@@ -39,7 +38,7 @@ $(function () {
     }
   });
 
-  $('.links a').on('click', function(){
+  $('.links a').on('click', function () {
     ga('send', 'event', 'link', 'click', $(this).attr('title'));
   });
 
