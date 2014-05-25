@@ -42,6 +42,11 @@ module.exports = function (grunt) {
     uglify: {
 
     },
+    slim: {
+      production: {
+        files: { 'index.html': 'views/layout.slim' }
+      }
+    },
     less: {
       production: {
         files: {
@@ -61,6 +66,10 @@ module.exports = function (grunt) {
       less: {
         files: ['**/*.less'],
         tasks: ['less']
+      },
+      slim: {
+        files:  ['**/*.slim'],
+        tasks: ['slim']
       }
     }
   });
@@ -70,10 +79,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-slim')
 
 
   // Task definition.
-  grunt.registerTask('default', ['jshint', 'less']);
-  grunt.registerTask('heroku', ['less']);
+  grunt.registerTask('default', ['jshint', 'less', 'slim']);
+  grunt.registerTask('heroku', ['less', 'slim']);
 
 };

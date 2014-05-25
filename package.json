@@ -17,6 +17,7 @@
     "test": "grunt travis --verbose"
   },
   "devDependencies": {
-    "grunt-contrib-watch": "~0.2.0"
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-slim": "~0.1.0"
   }
 }
