@@ -50,7 +50,7 @@ module.exports = function (grunt) {
     less: {
       production: {
         files: {
-          'public/css/main.css': 'public/css/main.less'
+          'css/main.css': 'css/main.less'
         },
         options: {
           compress: true
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-slim')
+  grunt.loadNpmTasks('grunt-slim');
 
 
   // Task definition.
