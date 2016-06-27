@@ -38,7 +38,7 @@ span:hover a.hlink,li:hover a.hlink{text-decoration:none;line-height:1;padding-l
 .link-icon::before{margin-left:4px;font-size:0.6em;font-family:FontAwesome;content:"\f0c1";color:#BBB;}
 .link-icon:hover::before{color:#e95d4f;}
 ul.description{font-size:1.1em;}ul.description li:before{content:"› ";}
-ul.skills{padding-left:0px!important;margin-left:5px;}ul.skills li{font-size:0.7em;background-color:#3a87ad;color:white;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:2px 4px;font-weight:bold;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);display:inline;list-style-type:none;margin-right:5px;float:left;line-height:16px;margin-top:5px;}
+ul.skills{padding-left:0px!important;margin-left:5px;}ul.skills li{font-size:0.9em;background-color:#3a87ad;color:white;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:2px 4px;font-weight:normal;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);display:inline;list-style-type:none;margin-right:5px;float:left;line-height:16px;margin-top:5px;}
 ul.skills:after{clear:both;content:"";display:block;}
 .header{min-height:50px;margin:0;color:#333;padding:1em;text-align:center;border-bottom:1px solid #eee;border-top:1px solid #eee;background:#fff;}
 .cv-icon{font-size:0.9em;}
