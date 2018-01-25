@@ -14,7 +14,8 @@
     "npm": "1.2.x"
   },
   "scripts": {
-    "test": "grunt travis --verbose"
+    "test": "grunt travis --verbose",
+    "build": "grunt heroku"
   },
   "devDependencies": {
     "grunt-contrib-watch": "~0.2.0",
